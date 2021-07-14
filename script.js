@@ -59,7 +59,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   val = e.value
                   Swal.fire(`Makasih oo su sayang sama b ${val}%`).then(function () {
                     Swal.fire({
-                      title: `Sekarang ${nama} kangen ga sama b?`,
+                      title: `Sekarang ${nama} kangen ko sonde sama b?`,
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
