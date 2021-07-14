@@ -15,7 +15,7 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/zal.zip/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo megaaaaaa", "b ada pertanyaan nih buat luu?", "question").then(function () {
+  Swal.fire("Hallo ciyaaaaa", "b ada pertanyaan nih buat luu?", "question").then(function () {
     Swal.fire("Jawab yang jujur ooo!").then(function () {
       Swal.fire("Awas saa kalo boong!!", "", "error").then(function () {
 
@@ -30,7 +30,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
             if (!value) {
               return 'jawab salam dolo'
             } else {
-              nama = "Mega";
+              nama = "Ciya";
             }
           }
         }).then(function () {
@@ -43,7 +43,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`B juga sayang banget sama ${nama}`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
@@ -63,7 +63,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
-                      denyButtonText: `Gak!`,
+                      denyButtonText: `Sonde!`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
