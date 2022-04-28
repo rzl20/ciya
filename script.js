@@ -62,7 +62,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       title: `Kalo ada Tawaran jadi MC le nih ${nama} mau?`,
                       showDenyButton: true,
                       showCancelButton: false,
-                      confirmButtonText: `Mau :(`,
+                      confirmButtonText: `Mauu`,
                       denyButtonText: `Sonde!`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
@@ -83,7 +83,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               })
             } else if (result.isDenied) {
               Swal.fire(`Awiiii b kira sering tuh`, '', 'error').then(function () {
-                Swal.fire('Yaudah deh bye!')
+                Swal.fire('Na sudah dahhhh')
               })
             }
           })
