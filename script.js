@@ -15,7 +15,7 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/zal.zip/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo ciyaaaaa", "b ada pertanyaan nih buat luu?", "question").then(function () {
+  Swal.fire("Hallo nidaaaaa", "b ada pertanyaan nih buat luu?", "question").then(function () {
     Swal.fire("Jawab yang jujur ooo!").then(function () {
       Swal.fire("Awas saa kalo boong!!", "", "error").then(function () {
 
@@ -30,25 +30,25 @@ document.querySelector(".tombol").addEventListener('click', function () {
             if (!value) {
               return 'jawab salam dolo'
             } else {
-              nama = "Ciya";
+              nama = "Nida";
             }
           }
         }).then(function () {
           const pertanyaan = Swal.fire({
-            title: `${nama} sayang ko snd sama ${sender}?`,
+            title: `${nama} Sering jadi MC ya?`,
             showDenyButton: true,
             showCancelButton: false,
-            confirmButtonText: `Sayang`,
-            denyButtonText: `Gak`,
+            confirmButtonText: `Sering`,
+            denyButtonText: `Sonde`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`B juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`Wihhh berarti lu pung Public Speaking bagus dong`).then(function () {
                 Swal.fire({
-                  title: 'Seberapa sayang emangnya?',
+                  title: 'Seberapa bagus emangnya?',
                   icon: 'question',
                   input: 'range',
-                  inputLabel: 'Antara 1 - 100 ya',
+                  inputLabel: 'Antara 1 - 100 ee',
                   inputAttributes: {
                     min: 1,
                     max: 100,
@@ -57,24 +57,24 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Makasih oo su sayang sama b ${val}%`).then(function () {
+                  Swal.fire(`Lumayan ju nii ${val}%`).then(function () {
                     Swal.fire({
-                      title: `Sekarang ${nama} kangen ko sonde sama b?`,
+                      title: `Kalo ada Tawaran jadi MC le nih ${nama} mau?`,
                       showDenyButton: true,
                       showCancelButton: false,
-                      confirmButtonText: `Kangen :(`,
+                      confirmButtonText: `Mau :(`,
                       denyButtonText: `Sonde!`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`utututu iya b juga kangen ${nama} :((`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
-                            Swal.fire('Coba klik ikon hati di paling bawah dong')
+                        Swal.fire(`Ihhhhh keren leeee, memang vibes vibes MC`).then(function () {
+                          Swal.fire('Oke pertanyaan terakhir').then(function () {
+                            Swal.fire('Coba lu klik ikon hati di paling bawah')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Jahat banget emang snd kangen sama pacar sendiri', '', 'error').then(function () {
-                          Swal.fire('Yaudah deh bye!')
+                        Swal.fire('Hehhhhh', '', 'error').then(function () {
+                          Swal.fire('Na sudah kalo gitu, dahhhh')
                         })
                       }
                     })
@@ -82,7 +82,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 })
               })
             } else if (result.isDenied) {
-              Swal.fire(`Yakin snd suka sama ${sender}?`, '', 'error').then(function () {
+              Swal.fire(`Awiiii b kira sering tuh`, '', 'error').then(function () {
                 Swal.fire('Yaudah deh bye!')
               })
             }
